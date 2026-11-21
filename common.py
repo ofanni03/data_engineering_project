@@ -10,6 +10,8 @@ def setup_logging():
         datefmt="%H:%M:%S",
     )
     logging.getLogger("py4j").setLevel(logging.WARNING)
+    logging.getLogger("azure").setLevel(logging.WARNING)
+
 
 
 def get_spark(app_name="tourism-pipeline"):
